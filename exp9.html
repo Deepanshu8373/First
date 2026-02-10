@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .main {
+            background-color: rgb(247, 244, 244);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 4fr);
+            gap: 20px;
+            padding:20px;
+        
+        }
+        .box {
+            background-color: white;
+            height: 100px;
+
+        }
+        img{
+            width: 100%;
+            height: 350px;
+        }
+          @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr; 
+      } 
+    } 
+    </style>
+</head>
+<body>
+     <h1 align="center">Responsive Product grid</h1>
+    <main>
+        <div class="main"> 
+    <div class="card"> 
+      <img src="https://www.beyours.in/cdn/shop/files/black-classic-shirt.jpg?v=1744815740" alt="Product 1"> 
+      <h3>Product 1</h3> 
+      <p>High-quality item with great features.</p> 
+      <p class="price">₹699</p> 
+    </div>
+    <div class="card"> 
+      <img src= "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSX9nqc4x34UbEdq5_MMDy4wwbxboFssEw4ydFszk5Z-ftPkz-hFxRtQHvh8HExILebuCpFlbM3daNsxdqbIF9v6ddu3eVEn3PFeAeCvwo4DPAfr9a3ne29Ow" alt="Product 2"> 
+      <h3>Product 2</h3> 
+      <p>Durable and reliable for everyday use.</p> 
+      <p class="price">₹799</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQg9kWot16_nrJPzx0Ac9LDnLlchbOP6LArQ_28I97SxYAqP-OS4U4ca0D9lRwuNBz5KnynQIuFwbkXft8lZELpv5ltooEViybMNfVHRfaxrTCNNqW0Rssymw" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Compact design with powerful performance.</p>
+        <p class="price">₹999</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQz6vw3FSPx8dJNCocxXikb7mXp5mIIWVFBib3tALIowrm958_VsJhLET9qDzGrovFjL6TdIipFnPGSYQPFBGob6jwLbEuULQvxRsvT8SPGUFhERb6ybBUlzWU" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Stylish and modern, perfect for any occasion.</p>
+            <p class="price">₹1199</p>
+            </div>
+    </main>
+    
+</body>
+</html>
